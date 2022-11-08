@@ -16,6 +16,9 @@ public class LoginPage extends BaseSeleniumPage {
     @FindBy(xpath = "//input[@value='Login']")
     private WebElement loginButton;
 
+    @FindBy(xpath = "//div[@class = 'alert alert-danger']")
+    private WebElement errorText;
+
     public LoginPage() {
         PageFactory.initElements(BaseSeleniumPage.driver, this);
     }
@@ -25,6 +28,20 @@ public class LoginPage extends BaseSeleniumPage {
         passwordField.sendKeys(passwordValue, Keys.ENTER);
 
         return new TicketsPage();
+    }
+
+    public LoginPage invalidAuth(String loginValue, String passwordValue) {
+        loginField.sendKeys(loginValue);
+        passwordField.sendKeys(passwordValue, Keys.ENTER);
+        return this;
+    }
+
+    public String getErrorText() {
+        return  errorText.getText();
+    }
+
+    public Boolean isErrorDisplayed() {
+        return errorText.isDisplayed();
     }
 
 }

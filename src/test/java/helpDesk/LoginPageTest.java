@@ -17,4 +17,15 @@ public class LoginPageTest extends BaseSeleniumTest {
 
         Assert.assertEquals(ticketsPage.getWelcomeText(), "Welcome to the django-helpdesk demo. Email is disabled.");
     }
+
+    @Test
+    public void testInvalidLogin() {
+        var loginPage = new MainPage()
+                .openLoginPage()
+                .invalidAuth(ConfigProvider.INVALID_LOGIN, ConfigProvider.INVALID_PASSWORD);
+
+        Assert.assertTrue(loginPage.isErrorDisplayed());
+        Assert.assertEquals(loginPage.getErrorText(), "Your username and password didn't match. Please try again.");
+    }
+
 }
