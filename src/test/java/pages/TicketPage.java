@@ -1,6 +1,6 @@
-package helpDesk;
+package pages;
 
-import core.BaseSeleniumPage;
+//import core.BaseSeleniumPage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -16,7 +16,7 @@ public class TicketPage extends BaseSeleniumPage {
     private WebElement body;
 
     public TicketPage() { //constructor
-        PageFactory.initElements(driver, this); //init all elements on this page
+        PageFactory.initElements(BaseSeleniumPage.driver, this); //init all elements on this page
     }
 
     public  String getEmail(){

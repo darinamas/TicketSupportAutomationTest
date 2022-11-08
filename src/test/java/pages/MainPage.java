@@ -1,8 +1,6 @@
-package helpDesk;
+package pages;
 
-import core.BaseSeleniumPage;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+//import core.BaseSeleniumPage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -10,12 +8,6 @@ import readProperties.ConfigProvider;
 
 
 public class MainPage extends BaseSeleniumPage {
-  //  private final By queueList1 = By.id("d_queue");  // private - no access from other class
-   //static WebDriver driver;
-
-//    public static void setDriver(WebDriver webDriver){
-//        driver = webDriver;
-//    }
     @FindBy(xpath = "//select[@id = 'id_queue']")
     private WebElement queueList;
 
