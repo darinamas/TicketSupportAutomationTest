@@ -1,9 +1,8 @@
-package helpDesk;
+package Tests;
 
 import core.BaseSeleniumTest;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
-import pages.LoginPage;
 import pages.MainPage;
 import readProperties.ConfigProvider;
 
