@@ -1,4 +1,4 @@
-package helpDesk;
+package Tests;
 
 import pages.MainPage;
 import pages.TicketPage;
