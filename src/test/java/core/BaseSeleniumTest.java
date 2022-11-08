@@ -1,8 +1,7 @@
 package core;
 
+import pages.BaseSeleniumPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.After;
-import org.junit.Before;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
@@ -26,6 +25,6 @@ public abstract class BaseSeleniumTest {
     @AfterEach
     public void tearDown(){
       //  driver.close(); //Close webdriver!
-       // driver.quit(); //Close chrome  browser
+        // driver.quit(); //Close chrome  browser
     }
 }

@@ -1,13 +1,12 @@
 package helpDesk;
 
+import pages.MainPage;
+import pages.TicketPage;
 import core.BaseSeleniumTest;
 import helpers.TestValues;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 import readProperties.ConfigProvider;
-
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 import static helpers.StringModifier.getUniqueString;
 

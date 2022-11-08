@@ -1,6 +1,6 @@
-package helpDesk;
+package pages;
 
-import core.BaseSeleniumPage;
+//import core.BaseSeleniumPage;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -17,7 +17,7 @@ public class LoginPage extends BaseSeleniumPage {
     private WebElement loginButton;
 
     public LoginPage() {
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(BaseSeleniumPage.driver, this);
     }
 
     public TicketsPage auth(String loginValue, String passwordValue) {
