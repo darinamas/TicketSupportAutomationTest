@@ -20,4 +20,6 @@ public interface ConfigProvider {
     String DEMO_LOGIN = readConfig().getString("usersParams.demo.login");
     String DEMO_PASSWORD = readConfig().getString("usersParams.demo.password");
 
+    String INVALID_LOGIN = readConfig().getString("usersParams.invalid.login");
+    String INVALID_PASSWORD = readConfig().getString("usersParams.invalid.password");
 }
