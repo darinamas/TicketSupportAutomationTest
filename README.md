@@ -43,14 +43,4 @@
 3. Right-click on the test class and select "Run" or "Debug".
 4. Monitor the test execution progress and check for any failures or errors.
 
-## Reporting
-
-📊 After running the test cases, you can find the test execution report in the `target` directory. Open the HTML report to view detailed information about the test results, including passed, failed, and skipped tests.
-
-## License
-
-📜 This project is licensed under the [MIT License](LICENSE).
-
-## Contact
-
 📧 If you have any questions or suggestions, feel free to reach out to us!
